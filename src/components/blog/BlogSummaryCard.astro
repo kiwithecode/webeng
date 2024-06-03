@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Pill } from '@eliancodes/brutal-ui';
+import SummaryCard from '../generic/SummaryCard.astro';
+import { Button } from '@eliancodes/brutal-ui';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+---
+
+<SummaryCard
+  title={post.data.title}
+  imgAlt={post.data.title}
+  imgSrc={post.data.imgUrl}
+  description={post.data.description}
+>
+  <div class='flex justify-end my-4'>
+    <Button href={`/blog/${post.slug}/`}>Read post &rarr;</Button>
+  </div>
+
+    <div class='flex justify-between items-center'>
+      <ul class='flex gap-4 mt-2'>
+       
+      </ul>
+      {
+        post.data.draft && (
+          <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
+            Draft
+          </span>
+        )
+      }
+    </div>
+  </div>
+</SummaryCard>
