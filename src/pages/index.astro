@@ -6,10 +6,7 @@ import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
 
-const builtWith = [
-  { name: 'CV', url: 'https://kiwidevcv.netlify.app/' },
-  
-];
+
 const RESOURCES = [
   { name: 'Superlative Sentences', url: 'https://wordwall.net/es/resource/35473665/superlative-sentences' },
   { name: 'Comparative Adjectives', url: 'https://wordwall.net/es/resource/33835613/ingl%c3%a9s/comparative-adjectives-animals' },
@@ -63,31 +60,7 @@ const RESOURCES = [
       </div>
       
       
-      <div class='col-span-2'>
-        <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            Kevin Armas CV
-          </h2>
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Pill>
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </Pill>
-                </li>
-              ))
-            }
-          </ul>
-        </Card>
-      </div>
+      
       <div class='col-span-2'>
 
         <Card>
