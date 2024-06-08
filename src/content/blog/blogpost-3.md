@@ -1,6 +1,6 @@
 ---
 title: A special place I’ve been
-description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
+description: One of the most special places I’ve been to is Cotopaxi, a beautiful volcano in Ecuador.
 pubDate: 2023-02-14 23:49
 author: Kevin Armas and Nicolas Mejia
 tags: 
